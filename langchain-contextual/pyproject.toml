@@ -6,7 +6,9 @@ build-backend = "poetry.core.masonry.api"
 name = "langchain-contextual"
 version = "0.1.0"
 description = "An integration package connecting Contextual and LangChain"
-authors = []
+authors = [
+    { name: "contextual-ai", email="support@contextual.ai" }
+]
 readme = "README.md"
 repository = "https://github.com/langchain-ai/langchain"
 license = "MIT"
