@@ -4,11 +4,9 @@ build-backend = "poetry.core.masonry.api"
 
 [tool.poetry]
 name = "langchain-contextual"
-version = "0.1.0"
+version = "0.2.0"
 description = "An integration package connecting Contextual and LangChain"
-authors = [
-    { name: "contextual-ai", email="support@contextual.ai" }
-]
+authors = []
 readme = "README.md"
 repository = "https://github.com/langchain-ai/langchain"
 license = "MIT"
@@ -23,7 +21,7 @@ disallow_untyped_defs = "True"
 [tool.poetry.dependencies]
 python = ">=3.9,<4.0"
 langchain-core = "^0.3.15"
-contextual-client = "^0.2.0"
+contextual-client = "^0.3.0"
 
 [tool.ruff.lint]
 select = ["E", "F", "I", "T201"]
@@ -44,16 +42,8 @@ optional = true
 [tool.poetry.group.codespell]
 optional = true
 
-[tool.poetry.group.test_integration]
-optional = true
-
 [tool.poetry.group.lint]
 optional = true
-
-[tool.poetry.group.dev]
-optional = true
-
-[tool.poetry.group.dev.dependencies]
 
 [tool.poetry.group.test.dependencies]
 pytest = "^7.4.3"
@@ -61,16 +51,12 @@ pytest-asyncio = "^0.23.2"
 pytest-socket = "^0.7.0"
 pytest-watcher = "^0.3.4"
 langchain-tests = "^0.3.5"
-contextual-client = "^0.2.0"
 
 [tool.poetry.group.codespell.dependencies]
 codespell = "^2.2.6"
-
-[tool.poetry.group.test_integration.dependencies]
 
 [tool.poetry.group.lint.dependencies]
 ruff = "^0.5"
 
 [tool.poetry.group.typing.dependencies]
 mypy = "^1.10"
-contextual-client = "^0.2.0"
