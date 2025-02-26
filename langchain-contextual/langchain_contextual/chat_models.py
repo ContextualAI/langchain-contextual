@@ -130,9 +130,7 @@ class ChatContextual(BaseChatModel):
             knowledge=knowledge,
             model=self.model_name,
             system_prompt=system_prompt,
-            extra_body={
-                "avoid_commentary": avoid_commentary,
-            },
+            avoid_commentary=avoid_commentary,
         )
         message = AIMessage(
             content=raw_message.to_dict().get("response"),
