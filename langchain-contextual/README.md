@@ -1,6 +1,6 @@
 # langchain-contextual
 
-This package contains the LangChain integration with Contextual
+This package contains the LangChain integration with Contextual AI.
 
 ## Installation
 
@@ -17,11 +17,16 @@ And you should configure credentials by setting the following environment variab
 `ChatContextual` class exposes chat models from Contextual.
 
 ```python
+llm = ChatContextual(
+    model="v1",
+    max_new_tokens=1024,
+    temperature=0,
+    top_p=0.9,
+)
+
+# only "human" and "ai" are accepted types of messages
+# message types must alternative between "human" and "ai" if more than one message
 messages = [
-    (
-        "system",
-        "You are a helpful assistant that uses all of the provided knowledge to answer the user's query to the best of your ability.",
-    ),
     ("human", "What type of cats are there in the world and what are the types?"),
 ]
 
