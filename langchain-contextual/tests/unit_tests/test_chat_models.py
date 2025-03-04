@@ -2,8 +2,9 @@
 
 from typing import Type
 
-from langchain_contextual.chat_models import ChatContextual
 from langchain_tests.unit_tests import ChatModelUnitTests
+
+from langchain_contextual.chat_models import ChatContextual
 
 
 class TestChatContextualUnit(ChatModelUnitTests):
