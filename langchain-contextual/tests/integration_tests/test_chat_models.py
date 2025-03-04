@@ -1,11 +1,11 @@
 """Test ChatContextual chat model."""
 
-import pytest
 from typing import Type
 
-from langchain_contextual.chat_models import ChatContextual
-from langchain_core.messages import AIMessage, HumanMessage
+import pytest
 from langchain_tests.integration_tests import ChatModelIntegrationTests
+
+from langchain_contextual.chat_models import ChatContextual
 
 
 class TestChatContextualIntegration(ChatModelIntegrationTests):
@@ -19,25 +19,24 @@ class TestChatContextualIntegration(ChatModelIntegrationTests):
         return {
             "model": "v1",
         }
-    
+
     # Override and skip the tests from the parent class
     @pytest.mark.xfail(reason="not implemented")
     def test_stream(self) -> None:
         return super().test_stream()
-        
+
     @pytest.mark.xfail(reason="not implemented")
     def test_astream(self) -> None:
         return super().test_astream()
-        
+
     @pytest.mark.xfail(reason="not implemented")
     def test_double_messages_conversation(self) -> None:
         return super().test_double_messages_conversation()
-        
+
     @pytest.mark.xfail(reason="not implemented")
     def test_usage_metadata(self) -> None:
         return super().test_usage_metadata()
-        
+
     @pytest.mark.xfail(reason="not implemented")
     def test_usage_metadata_streaming(self) -> None:
         return super().test_usage_metadata_streaming()
-

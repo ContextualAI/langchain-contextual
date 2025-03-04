@@ -43,13 +43,17 @@ class ChatContextual(BaseChatModel):
     """Base URL of Contextual AI Application."""
 
     temperature: Optional[float] = Field(default=0)
-    """The sampling temperature, which affects the randomness in the response. Note that higher temperature values can reduce groundedness. Defaults to `0`."""
+    """The sampling temperature, which affects the randomness in the response.
+Note that higher temperature values can reduce groundedness. Defaults to `0`."""
 
     top_p: Optional[float] = Field(default=0.9)
-    """A parameter for nucleus sampling, an alternative to temperature which also affects the randomness of the response. Note that higher top_p values can reduce groundedness. Defaults to `0.9`."""
+    """A parameter for nucleus sampling, an alternative to temperature
+which also affects the randomness of the response.
+Note that higher top_p values can reduce groundedness. Defaults to `0.9`."""
 
     max_new_tokens: Optional[int] = Field(default=1024)
-    """The maximum number of tokens that the model can generate in the response. Defaults to 1024. Minimum is 1. Maximum is 2048"""
+    """The maximum number of tokens that the model can generate in the response.
+Defaults to 1024. Minimum is 1. Maximum is 2048"""
 
     model_name: str = Field(default="v1", alias="model")
     """The name of the model. Defaults to `v1`."""
