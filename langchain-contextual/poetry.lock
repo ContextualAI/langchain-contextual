@@ -263,14 +263,14 @@ files = [
 
 [[package]]
 name = "contextual-client"
-version = "0.3.0"
+version = "0.4.0"
 description = "The official Python library for the Contextual AI API"
 optional = false
 python-versions = ">=3.8"
 groups = ["main"]
 files = [
-    {file = "contextual_client-0.3.0-py3-none-any.whl", hash = "sha256:2889f1cce567254c899488f66adde9aa3712dd99da2d838efa1f172891420d0c"},
-    {file = "contextual_client-0.3.0.tar.gz", hash = "sha256:92e2663572f7c03b61e648b80e267a5371b4f1d8d2b1b1cb03e7675ca9771bdf"},
+    {file = "contextual_client-0.4.0-py3-none-any.whl", hash = "sha256:da054491642855f325b548c7f4ca485422f51fced66ee2a52f3ad834926bea5f"},
+    {file = "contextual_client-0.4.0.tar.gz", hash = "sha256:9cee3ed45b04b4c7166035710c8e26bd7bb226cab69b925586e10cf209d1086f"},
 ]
 
 [package.dependencies]
@@ -1418,4 +1418,4 @@ cffi = ["cffi (>=1.11)"]
 [metadata]
 lock-version = "2.1"
 python-versions = ">=3.9,<4.0"
-content-hash = "b35d10eb3720f00f41551a815a8843c651cce5bea187bf9f844d9624076257c2"
+content-hash = "d7e1c1cf6e96d04e0dae64f643f8f06d80a8f0c0c5e556d14eb5591dd483044c"
