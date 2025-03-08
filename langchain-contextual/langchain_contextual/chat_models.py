@@ -132,11 +132,14 @@ Defaults to 1024. Minimum is 1. Maximum is 2048"""
         run_manager: Optional[CallbackManagerForLLMRun] = None,
         **kwargs: Any,
     ) -> ChatResult:
-        messages, knowledge, system_prompt, avoid_commentary = (
-            self._get_contextual_params(
-                messages,
-                **kwargs,
-            )
+        (
+            messages,
+            knowledge,
+            system_prompt,
+            avoid_commentary,
+        ) = self._get_contextual_params(
+            messages,
+            **kwargs,
         )
         raw_message = self.client.generate.create(
             messages=messages,
