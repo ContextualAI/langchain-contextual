@@ -4,7 +4,7 @@ build-backend = "poetry.core.masonry.api"
 
 [tool.poetry]
 name = "langchain-contextual"
-version = "0.4.2"
+version = "0.4.3"
 description = "An integration package connecting Contextual and LangChain"
 authors = []
 readme = "README.md"
